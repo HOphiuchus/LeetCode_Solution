@@ -1,7 +1,7 @@
 package main;
 
 public class LC004MediaOfTwoSortedArrays {
-
+    //Todo
     public double findMedianSortedArrays(int[] nums1,int[] nums2){
         int m = nums1.length;
         int n = nums2.length;
@@ -28,7 +28,7 @@ public class LC004MediaOfTwoSortedArrays {
         if( (t & 1) == 1 ){
             return nums[t/2];
         }else{
-            return (nums[t/2-1]+nums[t/2]/2.0);
+            return ((nums[t/2-1]+nums[t/2])/2.0);
         }
     }
 }
