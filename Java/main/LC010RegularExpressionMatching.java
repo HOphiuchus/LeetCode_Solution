@@ -1,6 +1,10 @@
 package main;
 
+/**
+ * To be optimized
+ */
 public class LC010RegularExpressionMatching {
+
     public boolean isMatch(String s, String p) {
         int i = 0, j = 0;
         boolean wildcast=false;
@@ -24,7 +28,6 @@ public class LC010RegularExpressionMatching {
                     return isMatch(s.substring(i),p.substring(j+2));
                 }
             }
-
         }
 
 
