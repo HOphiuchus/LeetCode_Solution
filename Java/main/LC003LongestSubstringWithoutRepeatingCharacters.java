@@ -1,6 +1,5 @@
 package main;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
@@ -58,6 +57,7 @@ public class LC003LongestSubstringWithoutRepeatingCharacters {
         }
         return longest;
     }
+
     private int findchar(char c, char[] chars, int start, int end) {
         for (int i = start; i < end; i++) {
             if (chars[i] == c) {

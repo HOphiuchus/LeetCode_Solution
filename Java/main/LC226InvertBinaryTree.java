@@ -31,10 +31,10 @@ public class LC226InvertBinaryTree {
             TreeNode tmpNode = treeNode.left;
             treeNode.left = treeNode.right;
             treeNode.right = tmpNode;
-            if(!Objects.isNull(treeNode.left)){
+            if (!Objects.isNull(treeNode.left)) {
                 queue.offer(treeNode.left);
             }
-            if(!Objects.isNull(treeNode.right)){
+            if (!Objects.isNull(treeNode.right)) {
                 queue.offer(treeNode.right);
             }
         }
